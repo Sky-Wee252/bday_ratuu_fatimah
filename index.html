@@ -253,6 +253,9 @@ section{max-width:720px;margin:auto;padding:80px 22px}
 function openSite(){
   document.getElementById('opening').classList.add('hide');
   document.getElementById('main').classList.add('show');
+  const audio =
+    document.getElementById('audio');
+  audio.play().catch(() => {});
   burst();
 }
 function openLetter(){
